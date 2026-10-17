@@ -1,0 +1,17 @@
+//AUDIT    JOB (R360,AUDIT),'BATCH AUDIT TRAIL',CLASS=A,MSGCLASS=X,
+//             NOTIFY=&SYSUID
+//*-------------------------------------------------------------------*
+//* SYSTEM:      RELIEF360 - EMERGENCY RELIEF ALLOCATION
+//* JOB NAME:    AUDIT
+//* DESCRIPTION: INVOKES COBOL PROGRAM AT05OPS TO RECORD AUDIT TRAIL
+//*              ENTRIES AND COMMIT BATCH_RUN CHECKPOINT STATUS TO DB2.
+//*
+//* LEAD:        ANANYA (JCL & BATCH LEAD)
+//* INTEGRATION: SIDDHI
+//*
+//* NOTE:        THIS IS A PHASE 0 IMPLEMENTATION PLACEHOLDER.
+//*-------------------------------------------------------------------*
+//STEP01   EXEC PGM=AT05OPS
+//STEPLIB  DD DSN=<HLQ>.RELIEF360.LOAD,DISP=SHR
+//SYSOUT   DD SYSOUT=*
+//

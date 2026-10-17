@@ -1,0 +1,47 @@
+# RELIEF360 - Mainframe Project .gitignore
+
+# Operating System temporary files
+Thumbs.db
+.DS_Store
+*.tmp
+*.bak
+*~
+desktop.ini
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.code-workspace
+.antigravity/
+
+# Zowe local configs and credentials (NEVER commit credentials)
+.zowe/
+zowe.config.user.json
+zowe.overrides.json
+*.key
+*.pem
+*.pfx
+*.cert
+*.credentials
+*.env
+*.env.local
+
+# Mainframe local build outputs & spools (if using local emulation or downloaded dumps)
+*.listing
+*.lst
+*.prt
+*.spl
+*.obj
+*.load
+*.dbrm
+sysprint.txt
+jeslog.txt
+*.sysprint
+*.jes2
+
+# Local test scratch / temp directories
+scratch/
+tmp/
+temp/
